@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CDPHId: MyString
+  ProductName: MyString
+  CSFId: MyString
+  CSF: MyString
+  CompanyId: MyString
+  CompanyName: MyString
+  BrandName: MyString
+  PrimaryCategoryId: MyString
+  PrimaryCategory: MyString
+  SubCategoryId: MyString
+  SubCategory: MyString
+  CasId: MyString
+  CasNumber: MyString
+  ChemicalId: MyString
+  ChemicalName: MyString
+  InitialDateReported: MyString
+  MostRecentDateReported: MyString
+  DiscontinuedDate: MyString
+  ChemicalCreatedAt: MyString
+  ChemicalUpdatedAt: MyString
+  ChemicalDateRemoved: MyString
+  ChemicalCount: MyString
+
+two:
+  CDPHId: MyString
+  ProductName: MyString
+  CSFId: MyString
+  CSF: MyString
+  CompanyId: MyString
+  CompanyName: MyString
+  BrandName: MyString
+  PrimaryCategoryId: MyString
+  PrimaryCategory: MyString
+  SubCategoryId: MyString
+  SubCategory: MyString
+  CasId: MyString
+  CasNumber: MyString
+  ChemicalId: MyString
+  ChemicalName: MyString
+  InitialDateReported: MyString
+  MostRecentDateReported: MyString
+  DiscontinuedDate: MyString
+  ChemicalCreatedAt: MyString
+  ChemicalUpdatedAt: MyString
+  ChemicalDateRemoved: MyString
+  ChemicalCount: MyString

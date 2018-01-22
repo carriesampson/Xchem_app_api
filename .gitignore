@@ -37,6 +37,9 @@ config/initializers/secret_token.rb
 *.bowerrc
 bower.json
 
+#Ignore seed .csv file
+brain.csv
+
 # Ignore pow environment settings
 .powenv
 
