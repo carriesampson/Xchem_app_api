@@ -16,17 +16,8 @@
 #   t.PrimaryCategory = row["PrimaryCategory"]
 #   t.SubCategoryId = row["SubCategoryId"]
 #   t.SubCategory = row["SubCategory"]
-#   t.CasId = row["CasId"]
-#   t.CasNumber = row["CasNumber"]
 #   t.ChemicalId = row["ChemicalId"]
 #   t.ChemicalName = row["ChemicalName"]
-#   t.InitialDateReported = row["InitialDateReported"]
-#   t.MostRecentDateReported = row["MostRecentDateReported"]
-#   t.DiscontinuedDate = row["DiscontinuedDate"]
-#   t.ChemicalCreatedAt = row["ChemicalCreatedAt"]
-#   t.ChemicalUpdatedAt = row["ChemicalUpdatedAt"]
-#   t.ChemicalDateRemoved = row["ChemicalDateRemoved"]
-#   t.ChemicalCount = row["ChemicalCount"]
 #   t.save
 # end
 #
