@@ -4,7 +4,6 @@ class BrainsController < ApplicationController
   # GET /brains
   def index
     @brains = Brain.all
-
     render json: @brains
   end
 
