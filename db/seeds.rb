@@ -12,6 +12,7 @@
 #   t.CSF = row["CSF"]
 #   t.CompanyId = row["CompanyId"]
 #   t.CompanyName = row["CompanyName"]
+#   t.BrandName = row["BrandName"]
 #   t.PrimaryCategoryId = row["PrimaryCategoryId"]
 #   t.PrimaryCategory = row["PrimaryCategory"]
 #   t.SubCategoryId = row["SubCategoryId"]

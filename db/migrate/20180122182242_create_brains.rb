@@ -12,17 +12,8 @@ class CreateBrains < ActiveRecord::Migration[5.2]
       t.string :PrimaryCategory
       t.string :SubCategoryId
       t.string :SubCategory
-      t.string :CasId
-      t.string :CasNumber
       t.string :ChemicalId
       t.string :ChemicalName
-      t.string :InitialDateReported
-      t.string :MostRecentDateReported
-      t.string :DiscontinuedDate
-      t.string :ChemicalCreatedAt
-      t.string :ChemicalUpdatedAt
-      t.string :ChemicalDateRemoved
-      t.string :ChemicalCount
 
       t.timestamps
     end
