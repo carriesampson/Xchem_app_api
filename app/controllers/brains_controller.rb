@@ -45,6 +45,6 @@ class BrainsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def brain_params
-      params.require(:brain).permit(:CDPHId, :ProductName, :CSFId, :CSF, :CompanyId, :CompanyName, :BrandName, :PrimaryCategoryId, :PrimaryCategory, :SubCategoryId, :SubCategory, :CasId, :CasNumber, :ChemicalId, :ChemicalName, :InitialDateReported, :MostRecentDateReported, :DiscontinuedDate, :ChemicalCreatedAt, :ChemicalUpdatedAt, :ChemicalDateRemoved, :ChemicalCount)
+      params.require(:brain).permit(:ProductName, :CSF, :CompanyName, :BrandName, :PrimaryCategory, :SubCategory, :ChemicalName)
     end
 end
