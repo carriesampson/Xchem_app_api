@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_01_24_020803) do
+ActiveRecord::Schema.define(version: 2018_01_26_001734) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,28 +37,13 @@ ActiveRecord::Schema.define(version: 2018_01_24_020803) do
   end
 
   create_table "brains", force: :cascade do |t|
-    t.string "CDPHId"
     t.string "ProductName"
-    t.string "CSFId"
     t.string "CSF"
-    t.string "CompanyId"
     t.string "CompanyName"
     t.string "BrandName"
-    t.string "PrimaryCategoryId"
     t.string "PrimaryCategory"
-    t.string "SubCategoryId"
     t.string "SubCategory"
-    t.string "CasId"
-    t.string "CasNumber"
-    t.string "ChemicalId"
     t.string "ChemicalName"
-    t.string "InitialDateReported"
-    t.string "MostRecentDateReported"
-    t.string "DiscontinuedDate"
-    t.string "ChemicalCreatedAt"
-    t.string "ChemicalUpdatedAt"
-    t.string "ChemicalDateRemoved"
-    t.string "ChemicalCount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

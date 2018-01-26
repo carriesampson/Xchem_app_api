@@ -4,6 +4,7 @@ class BrainsController < ApplicationController
   # GET /brains
   def index
     @brains = Brain.all
+
     render json: @brains
   end
 
@@ -45,6 +46,6 @@ class BrainsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def brain_params
-      params.require(:brain).permit(:ProductName, :CSF, :CompanyName, :BrandName, :PrimaryCategory, :SubCategory, :ChemicalName)
+      params.fetch(:brain).permit(:BrandName, :ProductName, :CSF, :CompanyName, :BrandName, :PrimaryCategory, :SubCategory, :ChemicalName)
     end
 end
