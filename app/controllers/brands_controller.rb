@@ -10,32 +10,9 @@ class BrandsController < ApplicationController
 
   # GET /brands/1
   def show
-    render json: @brand
-  end
-
-  # POST /brands
-  def create
-    @brand = Brand.new(brand_params)
-
-    if @brand.save
-      render json: @brand, status: :created, location: @brand
-    else
-      render json: @brand.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /brands/1
-  def update
-    if @brand.update(brand_params)
-      render json: @brand
-    else
-      render json: @brand.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /brands/1
-  def destroy
-    @brand.destroy
+    brand_chems = @brand.chemicals
+    brand_prods = @brand.products
+    render json: {brand: @brand, chemicals: brand_chems, products: brand_prods}
   end
 
   private

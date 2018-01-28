@@ -10,7 +10,8 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   def show
-    render json: @product
+    prod_brand = @product.brand
+    render json: {product: @product, brand: prod_brand}
   end
 
   # POST /products
