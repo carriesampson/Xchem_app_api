@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_01_27_055528) do
+ActiveRecord::Schema.define(version: 2018_01_28_011156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,10 +37,10 @@ ActiveRecord::Schema.define(version: 2018_01_27_055528) do
   end
 
   create_table "additives", force: :cascade do |t|
-    t.string "CSFName"
+    t.string "CSF"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "product_id"
+    t.integer "brand_id"
   end
 
   create_table "brains", force: :cascade do |t|
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2018_01_27_055528) do
     t.string "ChemicalName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "product_id"
+    t.integer "brand_id"
   end
 
   create_table "products", force: :cascade do |t|

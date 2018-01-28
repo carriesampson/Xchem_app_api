@@ -12,7 +12,7 @@ class AdditivesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create additive" do
     assert_difference('Additive.count') do
-      post additives_url, params: { additive: { CSFName: @additive.CSFName } }, as: :json
+      post additives_url, params: { additive: { CSF: @additive.CSF } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class AdditivesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update additive" do
-    patch additive_url(@additive), params: { additive: { CSFName: @additive.CSFName } }, as: :json
+    patch additive_url(@additive), params: { additive: { CSF: @additive.CSF } }, as: :json
     assert_response 200
   end
 

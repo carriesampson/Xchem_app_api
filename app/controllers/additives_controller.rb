@@ -46,6 +46,6 @@ class AdditivesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def additive_params
-      params.require(:additive).permit(:CSFName)
+      params.require(:additive).permit(:CSF)
     end
 end
