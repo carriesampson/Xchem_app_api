@@ -52,8 +52,6 @@ GEM
     crass (1.0.3)
     csv (1.0.0)
     erubi (1.7.0)
-    faker (1.8.7)
-      i18n (>= 0.7)
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -77,6 +75,10 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
+    pg_search (2.1.2)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
+      arel (>= 6)
     puma (3.11.2)
     rack (2.0.3)
     rack-cors (1.0.2)
@@ -140,9 +142,9 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   csv
-  faker
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
+  pg_search
   puma (~> 3.11)
   rack-cors
   rails (~> 5.2.0.beta2)

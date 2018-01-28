@@ -1,11 +1,11 @@
 class BrandsController < ApplicationController
-  before_action :set_brand, only: [:show, :update, :destroy]
+  before_action :set_brand, only: [:show]
 
   # GET /brands
   def index
     @brands = Brand.all
 
-    render json: @brands
+    render json: @brands.to_json
   end
 
   # GET /brands/1
