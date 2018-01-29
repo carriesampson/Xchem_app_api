@@ -4,6 +4,6 @@ class Brand < ApplicationRecord
   has_many :additives
 
   include PgSearch
-  pg_search_scope :search, against: [:brand]
+  pg_search_scope :search, against: [:brands]
 
 end
