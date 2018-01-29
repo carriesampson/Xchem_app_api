@@ -8,35 +8,35 @@ class ChemicalsController < ApplicationController
     render json: @chemicals
   end
 
-  # GET /chemicals/1
-  def show
-    render json: @chemical
-  end
-
-  # POST /chemicals
-  def create
-    @chemical = Chemical.new(chemical_params)
-
-    if @chemical.save
-      render json: @chemical, status: :created, location: @chemical
-    else
-      render json: @chemical.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /chemicals/1
-  def update
-    if @chemical.update(chemical_params)
-      render json: @chemical
-    else
-      render json: @chemical.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /chemicals/1
-  def destroy
-    @chemical.destroy
-  end
+  # # GET /chemicals/1
+  # def show
+  #   render json: @chemical
+  # end
+  #
+  # # POST /chemicals
+  # def create
+  #   @chemical = Chemical.new(chemical_params)
+  #
+  #   if @chemical.save
+  #     render json: @chemical, status: :created, location: @chemical
+  #   else
+  #     render json: @chemical.errors, status: :unprocessable_entity
+  #   end
+  # end
+  #
+  # # PATCH/PUT /chemicals/1
+  # def update
+  #   if @chemical.update(chemical_params)
+  #     render json: @chemical
+  #   else
+  #     render json: @chemical.errors, status: :unprocessable_entity
+  #   end
+  # end
+  #
+  # # DELETE /chemicals/1
+  # def destroy
+  #   @chemical.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

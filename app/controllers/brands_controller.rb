@@ -1,5 +1,5 @@
 class BrandsController < ApplicationController
-  before_action :set_brand, only: [:show]
+  before_action :set_brand, only: only: [:show, :update, :destroy]
 
   # GET /brands
   def index

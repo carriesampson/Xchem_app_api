@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :chemicals
   resources :products
   resources :brands
+  resources :search
 end
