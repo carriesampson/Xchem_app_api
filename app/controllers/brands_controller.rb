@@ -1,11 +1,14 @@
 class BrandsController < ApplicationController
-  before_action :set_brand, only: only: [:show, :update, :destroy]
+  before_action :set_brand, only: [:show, :update, :destroy]
 
   # GET /brands
   def index
-    @brands = Brand.all
-
-    render json: @brands.to_json
+    brands = if params[:query].present?
+      Brand.search(params[:query])
+    else
+      Brand.all
+    end
+    render json: brands
   end
 
   # GET /brands/1
